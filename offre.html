@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <!---------------------------------- Elghanam page------------------------------------->
     <!-- ==============================================================================================-->
     <!----------------------------------start page offer------------------------------------->
     <!-- ==============================================================================================-->
-    <div class="w-screen  overflow-auto md:h-screen flex flex-col gap-8 justify-center items-center bg-black py-6 md:py-0">
-        <div class="w-screen h-20  flex justify-center items-start md:mt-20"><img src="DEAF-removebg-preview 4.png" alt="" class="w-40h-20"></div>
-        <div class="w-screen h-9 md:h-12 flex place-content-between items-center px-3 md:px-5 ">
+    <div class="w-full  overflow-auto  md:h-screen flex flex-col gap-16 md:gap-0 justify-center items-center bg-black py-6 md:py-0">
+        <div class="w-screen h-20 flex justify-start items-start md:mt-4 px-6"><img src="DEAF-removebg-preview 4.png" alt="" class="w-40h-20"></div>
+        <div class="w-full h-9 md:h-12 flex flex-col gap-3 items-center px-3 md:px-5 ">
             <h1 class="font-bold text-sm md:text-2xl text-white ">Our subscriptions</h1>
-            <div class="w-fit h-9 md:h-10 flex  gap-2 place-content-evenly items-center bg-gray-900 rounded-sm px-1">
-                <button class="focus:w-fit md:focus:w-36 h-7 md:focus:h-8  focus:bg-green-50 focus:text-black text-white rounded-sm px-1 text-sm duration-700">Pay yearly</button>
-                <button class="focus:w-fit md:focus:w-36 h-7 md:focus:h-8  focus:bg-green-50 focus:text-black text-white rounded-sm px-1 text-sm duration-700">Pay monthly</button>
+            <div class="w-fit h-9 md:h-10 flex gap-2 place-content-evenly items-center bg-gray-900 rounded-sm z-10 ">
+                <button id="btn" class=" focus:w-fit md:focus:w-36 h-7 md:focus:h-8  focus:bg-green-50 focus:text-black text-white rounded-sm px-1 text-sm duration-700" onclick="clikator()" >Pay yearly</button>
+                <button  class="focus:w-fit md:focus:w-36 h-7 md:focus:h-8  focus:bg-green-50 focus:text-black text-white rounded-sm px-1 text-sm duration-700" onclick="clikator2()" >Pay monthly</button>
             </div>
         </div>
-        <div
-            class="w-screen h-fit flex flex-col md:flex-row gap-10 md:place-content-evenly items-center md:py-10">
+        <div id="offer1" class="w-full h-fit flex flex-col md:flex-row gap-10 md:place-content-evenly items-center md:py-10">
             <div class="w-2/3 md:w-1/4 h-auto flex flex-col space-y-1.5 bg-gray-900 rounded-lg p-3">
                 <h2 class="text-3xl text-white font-bold">Personal</h2>
                 <div class="flex ">
@@ -37,7 +37,7 @@
                 <p class="text-white"><input type="checkbox"> Access to Epidemic Sound mobile app.</p>
                 <p class="text-gray-600 flex justify-center text-xs">* Billed annually ( $ 119.88 / year ).</p>
                 <button class="bg-red-700 text-slate-50 py-1 rounded-lg"><a href=""> Start Naw</a></button>
-                <button class="bg-gray-800 text-slate-50 py-1 rounded-lg"><a href="#">Read more</a></button>
+               
             </div>
             <div class="w-2/3 md:w-1/4 h-auto flex flex-col space-y-1.5 bg-gray-900 rounded-lg p-3">
                 <h2 class="text-3xl text-white font-bold">Commercial</h2>
@@ -51,8 +51,8 @@
                 <p class="text-white"><input type="checkbox"> Unlimited downloads.</p>
                 <p class="text-white"><input type="checkbox"> Access to Epidemic Sound mobile app.</p>
                 <p class="text-gray-600 flex justify-center text-xs">* Billed annually ( $ 299.88 / year ).</p>
-                <button class="bg-red-700 text-slate-50 py-1 rounded-lg"><a href=""> Start Naw</a></button>
-                <button class="bg-gray-800 text-slate-50 py-1 rounded-lg"><a href="#">Read more</a></button>
+                <button class="bg-red-700 text-slate-50 py-1 rounded-lg"  > Start Naw</button>
+                
             </div>
             <div class="w-2/3 md:w-1/4 h-auto flex flex-col space-y-1.5 bg-gray-900 rounded-lg p-3">
                 <h2 class="text-3xl text-white font-bold">Enterprise</h2>
@@ -60,7 +60,56 @@
                     <p class="text-2xl font-bold text-white">$99</p>
                     <p class="text-xs font-bold pt-1 text-white">.99</p>
                 </div>
-                <p class="text-white">/ month</p>
+                
+                <p class="text-white">Everything in Personal, plus:</p>
+                <p class="text-white"><input type="checkbox"> voice music</p>
+                <p class="text-white"><input type="checkbox"> telechege music</p>
+                <p class="text-white"><input type="checkbox"> creat playlist or favoris</p>
+                <p class="text-white"><input type="checkbox">un music multiple apparais</p>
+                <p class="text-white"><input type="checkbox">send message l'artiste par mony</p>
+                <div class="w-6 h-5"></div>
+                <button class="bg-red-700 text-slate-50 py-1 rounded-lg"><a href="#"> Start Naw</a></button>
+            </div>
+        </div>
+        <!-- --------------------------------------------------------------------------------- -->
+        <div id="offer2" class="w-full h-fit flex flex-col md:flex-row gap-10 md:place-content-evenly items-center md:py-10">
+            <div class="w-2/3 md:w-1/4 h-auto flex flex-col space-y-1.5 bg-gray-900 rounded-lg p-3">
+                <h2 class="text-3xl text-white font-bold">Personal</h2>
+                <div class="flex ">
+                    <p class="text-2xl font-bold text-white">$100</p>
+                    <p class="text-xs font-bold pt-1 text-white">.99</p>
+                </div>
+                <p class="text-white">/ year</p>
+                <p class="text-white"><input type="checkbox"> Monetize 1 channel per platform.</p>
+                <p class="text-white"><input type="checkbox"> Publish anywhere online.</p>
+                <p class="text-white"><input type="checkbox"> Unlimited downloads.</p>
+                <p class="text-white"><input type="checkbox"> Access to Epidemic Sound mobile app.</p>
+                <p class="text-gray-600 flex justify-center text-xs">* Billed annually ( $ 119.88 / year ).</p>
+                <button class="bg-red-700 text-slate-50 py-1 rounded-lg"><a href=""> Start Naw</a></button>
+               
+            </div>
+            <div class="w-2/3 md:w-1/4 h-auto flex flex-col space-y-1.5 bg-gray-900 rounded-lg p-3">
+                <h2 class="text-3xl text-white font-bold">Commercial</h2>
+                <div class="flex ">
+                    <p class="text-2xl font-bold text-white">$200</p>
+                    <p class="text-xs font-bold pt-1 text-white">.99</p>
+                </div>
+                <p class="text-white">/ year</p>
+                <p class="text-white">Everything in Personal, plus:</p>
+                <p class="text-white"><input type="checkbox"> Monetize 1 channel per platform.</p>
+                <p class="text-white"><input type="checkbox"> Unlimited downloads.</p>
+                <p class="text-white"><input type="checkbox"> Access to Epidemic Sound mobile app.</p>
+                <p class="text-gray-600 flex justify-center text-xs">* Billed annually ( $ 299.88 / year ).</p>
+                <button class="bg-red-700 text-slate-50 py-1 rounded-lg"  > Start Naw</button>
+                
+            </div>
+            <div class="w-2/3 md:w-1/4 h-auto flex flex-col space-y-1.5 bg-gray-900 rounded-lg p-3">
+                <h2 class="text-3xl text-white font-bold">Enterprise</h2>
+                <div class="flex ">
+                    <p class="text-2xl font-bold text-white">$999</p>
+                    <p class="text-xs font-bold pt-1 text-white">.99</p>
+                </div>
+                
                 <p class="text-white">Everything in Personal, plus:</p>
                 <p class="text-white"><input type="checkbox"> voice music</p>
                 <p class="text-white"><input type="checkbox"> telechege music</p>
@@ -75,6 +124,21 @@
     <!-- ==============================================================================================-->
     <!----------------------------------final page offer------------------------------------->
     <!-- ==============================================================================================-->
+    <script>
+        var offerown = document.querySelector("#offer1");
+        var offertwo = document.querySelector("#offer2");
+        function clikator(){
+             console.log("clikator");
+            offerown.style.display = "none";
+            offertwo.style.display = "flex";    
+        }
+        function clikator2(){
+             console.log("clikator");
+            offerown.style.display = "flex";
+            offertwo.style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>
