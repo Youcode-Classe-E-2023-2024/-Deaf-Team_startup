@@ -3,11 +3,14 @@
     display: none;
 }
 
-
-
 .hidden {
     display: none;
 }
+
+.redColor {
+  color: red;
+}
+
 
 .logo{ 
     height:70px;
