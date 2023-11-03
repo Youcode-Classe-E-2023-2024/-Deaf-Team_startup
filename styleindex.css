@@ -101,16 +101,10 @@
         /* MEDIA-QUERY */
 
 @media (max-width:1000px) {
-    .navbar{
-        height: auto;
-    }
     .logo{
         height: 100px;
-        width: 100px;
-        margin-left: 16px;
     }
     .se-connecter{
-        margin-right: 16px;
         height: 35px;
         width: 130px;
         font-size: 12px;
@@ -135,9 +129,5 @@
     }
     .footer{
         flex-direction: column;
-    }
-    .footer-b{
-        margin-left: 0%;
-        margin-right: 0%;
     }
 }
