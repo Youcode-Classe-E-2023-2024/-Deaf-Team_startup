@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  transition: all .2s linear;
+  color: white;
+  font-size: 20px;
+}
+
+body{
+  background-color: #3e0910;
+}
+
+.container{
+  position: absolute;
+  top: 32%;
+  left: 68%;
+  transform: translate(-50%, -30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:15px;
+  min-height: 100vh;
+  background-color:#7B0909;
+}
+
+.container form{
+  padding: 0 10px;
+  width:700px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 8px;
+  display: block;
+  font-size: 16px;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding: 11px 10px;
+  font-size: 15px;
+  border-radius: 7px;
+  color: #000;
+  text-transform: lowercase;
+}
+.container form .row .col .inputBox #country{
+  padding-left: 4px;
+  font-size: 15px;
+}
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+  color: #000;
+}
+
+.container form .row .col .inputBox img{
+  height: 35px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+
+.container form .submit-btn{
+  width: 100%;
+  height: 45px;
+  padding:2px;
+  font-size: 17px;
+  background: #000;
+  color:#FFF;
+  margin-top: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: #71121F 0 3px 4px;
+}
+
+.submit-div{
+  position: absolute;
+  top: 91.3%;
+  left: 38%;
+  width: 183px;
+  height: 6px;
+  background-color: #FBF327;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+option{
+  color: #000;
+}
+#country{
+  width: 305px;
+  height: 40px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  width: 400px;
+  height: 250px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-inner{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.front{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #0045c7, #ff3c7d);
+  position: absolute;
+  top: 50%;
+  right: 90%;
+  padding: 20px 30px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+}
+
+
+.rows{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map-img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.card-number-box{
+  padding: 15px 25px;
+}
+
+.flexbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.box span{
+  padding-bottom: 20px;
+}
+
+.back{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #0045c7, #ff3c7d);
+  position: absolute;
+  top: 50%;
+  right: 90%;
+  text-align: right;
+  padding: 20px 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+}
+
+.dark-stick{
+  align-self: center;
+  width: 390px;
+  height: 50px;
+  background-color: #000;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.ccv-title{
+  padding-top: 15px;
+}
+
+.white-stick{
+  align-self: center;
+  width: 340px;
+  height: 40px;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  color: black;
+}
+
+.visa-img{
+  height: 40px;
+  width: 60px;
+  padding-top: 14px;
+}
+
+.pattern-img{
+  height: 10px;
+  width: 68px;
+  border-radius: 20px;
+}
+
+.date{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.exp-month-input{
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 1440px) and (max-width: 3000px) {
+  .container {
+    top: 2%; 
+    left: 70%;
+    transform: translateX(-50%);
+    width: 30%;
+    align-items: start;
+    margin-top: 10px;
+    min-height: 22vh;
+    padding-top: 40px;
+  }
+
+
+  .submit-div{
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .container {
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .col {
+    flex: 1 1 100%; 
+    padding: 10px;
+  }
+
+  .front,
+  .submit-div{
+    opacity: 0;
+  }
+
+  .submit-btn{
+    width: 60%;
+  }
+} 
+
+@media screen and (max-width: 1024px) {
+  .container {
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .col {
+    flex: 1 1 100%; 
+    padding: 10px;
+  }
+
+  .front,
+  .submit-div{
+    opacity: 0;
+  }
+  
+  .submit-btn{
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    left: 56%;
+    top: 10%;
+    width: 100%;
+    box-sizing: content-box;
+  }
+  .submit-div{
+    opacity: 0;
+  }
+
+}
