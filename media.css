@@ -1,0 +1,24 @@
+
+@media (max-width: 1281px) {
+    #wholeSection {
+        grid-template-columns: 1fr;
+    }
+    #two {
+        display: none;
+    }
+}
+@media (max-width: 909px) {
+    #tracks,
+    #recents {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #redSection {
+        display: none;
+    }
+}
+@media (max-width: 560px) {
+    #tracks,
+    #recents {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
