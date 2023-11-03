@@ -1,0 +1,15 @@
+
+        
+           
+  /* focus:w-fit md:focus:w-fit h-7 md:focus:h-8 md:h-8  focus:bg-green-50 focus:text-black text-white rounded-sm px-1 text-sm duration-700" */
+        
+  .botona{
+    width: fit-content;
+    height: 32px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 12px;
+
+
+}
