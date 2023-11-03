@@ -1,5 +1,5 @@
 
-@media (max-width: 1281px) {
+@media (max-width: 900px) {
     #wholeSection {
         grid-template-columns: 1fr;
     }
@@ -7,7 +7,7 @@
         display: none;
     }
 }
-@media (max-width: 909px) {
+@media (max-width: 900px) {
     #tracks,
     #recents {
         grid-template-columns: repeat(4, 1fr);

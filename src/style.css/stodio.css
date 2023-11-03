@@ -48,16 +48,12 @@
 /* keyframes */
 @keyframes exampleAnimation {
   0% {
-    background-image: url("img/redBox/mImg2.jpg");
+    background-image: url("/img/redBox/mImg1.jpg");
   }
   
   100% {
-    background-image: url("img/redBox/mImg1.jpg");
+    background-image: url("/img/redBox/mImg2.jpg");
   }
-  
-  /* 100% {
-    background-image: url("img/redBox/mImg3.jpg");
-  } */
 }
 
 .lestining-music1 {

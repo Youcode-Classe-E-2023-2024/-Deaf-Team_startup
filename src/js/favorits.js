@@ -11,7 +11,6 @@ const favoritConInfo = [
     ['Dont Start Now', 'Dua Lipa', 'singer4'],
     ['Watermelon Sugar', 'Harry Styles', 'singer5'],
 ];
-
 const favoritContainer = document.querySelector('.favorit-container'); 
 for (let i = 0; i < favoritConInfo.length; ++i) {
     favoritContainer.insertAdjacentHTML('beforeend', `
