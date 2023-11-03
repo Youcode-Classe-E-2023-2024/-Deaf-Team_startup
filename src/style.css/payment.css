@@ -69,7 +69,9 @@ body{
   color: #000;
   text-transform: lowercase;
 }
-.container form .row .col .inputBox #country{
+.container form .row .col .inputBox #country,
+#months,
+#years{
   padding-left: 4px;
   font-size: 15px;
 }
@@ -107,21 +109,12 @@ body{
   box-shadow: #71121F 0 3px 4px;
 }
 
-.submit-div{
-  position: absolute;
-  top: 91.3%;
-  left: 38%;
-  width: 183px;
-  height: 6px;
-  background-color: #FBF327;
-  z-index: 10;
-  border-radius: 4px;
-}
-
 option{
   color: #000;
 }
-#country{
+#country,
+#years,
+#months{
   width: 305px;
   height: 40px;
   color: black;
@@ -260,6 +253,11 @@ option{
 .exp-month-input{
   margin-bottom: 4px;
 }
+
+.card-name-input .wrong{
+  border: green 2px solid;
+}
+
 @media screen and (min-width: 1440px) and (max-width: 3000px) {
   .container {
     top: 2%; 
@@ -271,10 +269,9 @@ option{
     min-height: 22vh;
     padding-top: 40px;
   }
-
-
-  .submit-div{
-    opacity: 0;
+  
+  .inputBoxCcv{
+    width: 80%;
   }
 }
 @media screen and (max-width: 1120px) {
@@ -295,14 +292,15 @@ option{
     padding: 10px;
   }
 
-  .front,
-  .submit-div{
+  .front{
     opacity: 0;
   }
 
   .submit-btn{
     width: 60%;
   }
+
+
 } 
 
 @media screen and (max-width: 1024px) {
@@ -323,8 +321,7 @@ option{
     padding: 10px;
   }
 
-  .front,
-  .submit-div{
+  .front{
     opacity: 0;
   }
   
@@ -341,7 +338,8 @@ option{
     width: 100%;
     box-sizing: content-box;
   }
-  .submit-div{
+
+  .front{
     opacity: 0;
   }
 
