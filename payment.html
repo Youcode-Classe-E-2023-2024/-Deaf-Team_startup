@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="refresh" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/src/style.css/payment.css">
+    
+    </head>
 <body>
-    <!----------------------------------Loussal page------------------------------------->
-</body>
+    <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="front animation">
+                        <img src="image/map.png" alt="" class="map-img">
+                        <div class="rows">
+                            <img src="image/chip.png" alt="" width="60px">
+                            <img src="image/visa.png" alt="" width="80px">
+                        </div>
+                        <div class="card-number-box">################</div>
+                        <div class="flexbox">
+                            <div class="box">
+                                <span>card holder</span>
+                                <div class="card-holder-name">full name</div>
+                            </div>
+                            <div class="box">
+                                <span>expires</span>
+                                <div class="date">
+                                    <div class="front-exp-month">MM</div>
+                                    <div>/</div>
+                                    <div class="front-exp-year">YY</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="stripe"></div>
+                        <div class="box">
+                            <div class="dark-stick"></div>
+                            <div class="ccv-title">CCV</div>
+                            <input type="text" class="white-stick">
+                            <div class="visa-img">
+                                <img src="image/visa.png" alt="" class="visa-img">
+                                <img src="image/pattern.png" alt="" class="pattern-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        
+    
+        <form action="">
+    
+            <div class="row">
+    
+                <div class="col">
+    
+                    <h3 class="title">billing address</h3>
+    
+                    <div class="inputBox">
+                        <span class="name-span">full name :</span>
+                        <input type="text" placeholder="James Matador" name="full-name" class="card-name-input" pattern="[A-Za-z]{1,20}" maxlength="20" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="exempleGame@gmail.com" pattern="[A-Za-z]{1, 20}(\d{1,3})?@gmail.com" maxlength="50" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>password :</span>
+                        <input type="password" placeholder="Enter Password"  required>
+                    </div>
+                    <div class="inputBox">
+                        <span>country</span>
+                        <select id="country">
+                            <option value="">Palestein</option>
+                            <option value="">Russia</option>
+                            <option value="">Tailand</option>
+                            <option value="">France</option>
+                            <option value="">Turkey</option>
+                            <option value="">Japan</option>
+                            <option value="">Morocco</option>
+                            <option value="">Italy</option>
+                            <option value="">United Arab Emarates</option>
+                        </select>
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text" placeholder="Miami" pattern="[A-Za-z]{10, 20}" maxlength="20" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="number" placeholder="123456" pattern="(\d{6})" maxlength="6" required>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col">
+    
+                    <h3 class="title">payment</h3>
+    
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="image/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="Mr.James Matador" class="card-number-name" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444" class="card-number-input" pattern="(\d{16})" maxlength="16" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="January" class="exp-month-input" pattern="[A-Za-z]{10, 30}" required>
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2023" class="exp-year-input" pattern="(\d[2023-2030]{4})" maxlength="4" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="number" placeholder="1234" ccv required>
+                        </div>
+                    </div>
+    
+                </div>
+        
+            </div>
+    
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+            <div class="submit-div"></div>
+    
+        </form>
+    
+    </div>    
+        
+    <script src="./src/js/payment.js"></script>
+    </body>
 </html>
