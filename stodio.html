@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taillwind</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <!----------------------------------hamza page------------------------------------->
+            <!-- Home Section -->
+        <!-- h-screen must add it here -->
+        <section id="wholeSection" class="h-screen grid grid-cols-[2fr,.8fr]" >
+            <div  class="part1 flex flex-col gap-2 bg-zinc-950 p-4 overflow-y-auto">
+                <ul class="flex justify-between items-center">
+                    <li class="flex items-center gap-10 pt-4 pb-8">
+                        <div class="logo">
+                            <div class="waviy" >
+                                <span style="--i:1"></span>
+                                <span style="--i:2"></span>
+                                <span style="--i:3"></span>
+                                <span style="--i:4"></span>
+                                <span style="--i:5"></span>
+                                <span style="--i:6"></span>
+                                <span style="--i:7"></span>
+                                <span style="--i:8"></span>
+                                <span style="--i:9"></span>
+                                <span style="--i:10"></span>
+                                <span style="--i:11"></span>
+                                <span style="--i:12"></span>
+                            </div>
+                            <div>
+                                DEAF SOUND
+                            </div>
+                            <div class="waviy" style="transform: rotateX(180deg);">
+                                <span style="--i:1"></span>
+                                <span style="--i:2"></span>
+                                <span style="--i:3"></span>
+                                <span style="--i:4"></span>
+                                <span style="--i:5"></span>
+                                <span style="--i:6"></span>
+                                <span style="--i:7"></span>
+                                <span style="--i:8"></span>
+                                <span style="--i:9"></span>
+                                <span style="--i:10"></span>
+                                <span style="--i:11"></span>
+                                <span style="--i:12"></span>   
+                            </div>
+                        </div>
+                        <label class="relative block">
+                            <span class="sr-only">Search</span>
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+                            </span>
+                            <input class="placeholder:italic placeholder-text-slate-400 block bg-white w-full md:w-[200%] border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus-border-sky-500 focus-ring-sky-500 focus-ring-1 sm:text-sm" placeholder="Search Your Favorite Music..." type="text" name="search"/>
+                        </label>                        
+                    </li>
+                    <!-- <ion-icon name="musical-notes" class="text-5xl"></ion-icon> -->
+                </ul>
+                <!-- Red Section -->
+                <main id="redSection" class="grid grid-cols-[1fr,1fr] w-full bg-red-600">
+                    <!-- part1 -->
+                    <div class="px-10 py-16">
+                        <ul class="flex flex-col gap-6">
+                            <li class="flex gap-2">
+                                <span class="bg-red-400 px-8 py-2 text-lg font-semibold">Radio</span>
+                                <span class="bg-red-400 px-8 py-2 text-lg font-semibold">House</span>
+                            </li>
+                            <li>
+                                <h1 class="text-2xl font-bold text-white pb-2">Best Progressive House (All - Time)</h1>
+                                <p class="text-red-900">West Coast Radio (EDM)</p>
+                            </li>
+                            <li class="flex gap-10">
+                                <span class="flex bg-black items-center px-2 py-2 cursor-pointer">
+                                    <p class="text-white px-20 text-3xl font-bold">PLAY</p>
+                                    <ion-icon name="play" class="text-white text-3xl"></ion-icon>
+                                </span>
+                                <span class="cursor-pointer bg-black flex items-center justify-center rounded-full border-2 border-solid border-black w-14 h-14">
+                                    <ion-icon name="heart" class="text-white text-3xl"></ion-icon>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- part2 -->
+                    <div id="lestiningMusic" class="lestining-music1">
+                    </div>
+                    <!-- part3 -->
+                    <!-- <div id="redSection3" class=" bg-red-800 ">
+                        <ul class="flex items-end">
+                            <li class="text-6xl font-bold selection:">01</li>
+                            <li class="text-2xl">/03</li>
+                        </ul>
+                        <ul class="flex w-full h-2">
+                            <li class="w-full h-full bg-black"></li>
+                            <li class="w-full h-full bg-white"></li>
+                        </ul>
+                    </div> -->
+                </main>
+
+                <!-- Categories: -->
+                <main class="text-white p-4">
+                    <!-- Tracks List -->
+                    <ul>
+                        <h1 class="text-lg font-semibold">Weekly Top Track</h1>
+                        <div style="height: 208px;" class="overflow-hidden">
+                            <ul id="tracks" class="tracks-parent grid grid-cols-6 rounded-lg p-4 gap-4">
+                            </ul>
+                        </div>
+                        <div class="more flex justify-center">
+                            <div class="flex items-center gap-2 px-4 py-2 border-2 rounded-full cursor-pointer ">
+                                <div class="bg-white w-5 h-5 text-black flex items-center justify-center rounded-full">
+                                    <ion-icon name="chevron-down-outline" class="text-1xl"></ion-icon>
+                                </div>
+                                <span>MORE</span>
+                            </div>
+                        </div>
+                    </ul>
+                    <!-- Recent Artists list -->
+                    <ul>
+                        <h1 class="text-lg font-semibold">Recent Artists</h1>
+                        <div style="height: 208px;" class="overflow-hidden">
+                            <ul id="recents" class="recent-artist-parent grid grid-cols-6 text-white bg-black rounded-lg p-4 gap-4">
+                            </ul>
+                        </div>
+                        <div class="more flex justify-center">
+                            <div class="flex items-center gap-2 px-4 py-2 border-2 rounded-full cursor-pointer ">
+                                <div class="bg-white w-5 h-5 text-black flex items-center justify-center rounded-full">
+                                    <ion-icon name="chevron-down-outline" class="text-1xl"></ion-icon>
+                                </div>
+                                <span>MORE</span>
+                            </div>
+                        </div>
+                    </ul>
+                </main>
+            </div>
+
+            <!-- Artist Section --> 
+            <div  class="part2 hidden overflow-y-auto bg-zinc-900">
+                <ul>
+                    <!-- part1 -->
+                    <div class="text-white p-10 h-96 w-full" style="background-image: url('img/Marshmello.jpg');background-size: cover;background-position: center;">
+                        <ion-icon name="arrow-back-outline" class="back text-xl cursor-pointer"></ion-icon>
+                        <ul class="flex flex-col gap-4 justify-center h-full">
+                            <div class="flex items-center gap-1">
+                                <ion-icon name="checkmark-circle" class="text-blue-500 text-3xl"></ion-icon>
+                                <p >Verified Artist</p>
+                            </div>
+                            <h1 class="text-7xl font-bold">Alan Walker</h1>
+                            <p>1.091.070 Monthly Listeners</p>
+                        </ul>
+                    </div>
+                    <!-- part2 -->
+                    <div class="text-white flex items-center gap-8 px-10 py-5">
+                        <div class="cursor-pointer w-16 h-16 bg-red-600 rounded-full flex justify-center items-center">
+                            <ion-icon name="caret-forward" class="text-3xl"></ion-icon>
+                        </div>
+                        <div class="cursor-pointer text-2xl border-2 border-solid border-white rounded-full px-4 py-1">Follow</div>
+                        <ion-icon name="ellipsis-horizontal" class="cursor-pointer text-3xl"></ion-icon>
+                    </div>
+                    <!-- part3 -->
+                    <div class="px-10 py-5 text-white">
+                        <h1 class="text-2xl font-bold">Popular</h1>
+                    </div>
+                    <!-- part4 -->
+                    <div class="artist-section flex flex-col gap-4">
+                    </div>
+                </ul>
+            </div>
+            <!-- Favorits Section: -->
+            <div id="two" class="favorit-container h-screen overflow-auto bg-slate-800 px-6 py-4 flex fixed-element flex-col gap-6 hide-scrollbar">
+            </div>
+        </section>
+
+    <!-- Import TailWind: -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Icons: -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Scripts -->
+    <script src="tracks.js"></script>
+    <script src="favorits.js"></script>
+    <script src="recent-artists.js"></script>
+    <script src="artist-section.js"></script>
+    <script src="more.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.logo{ 
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: red; }
+    .waviy{  color: white;
+        position: relative; }
+    .waviy span{
+        position: relative;
+        display: inline-block;
+        border:1px solid  red;
+        background-color: red;
+        width: 3px;
+        animation: waviy 1s linear infinite;
+        animation-delay: calc(.1s*var(--i));
+    }
+    @keyframes waviy{
+        0%{
+            height:0px;
+        }
+        25%{
+          height:30px;
+        } 
+        50%{
+          height:0px;
+        } 
+        75%{
+          height:30px;
+        } 
+        100%{
+          height:0;
+        }        
+}
+
+/* keyframes */
+@keyframes exampleAnimation {
+  0% {
+    background-image: url("img/redBox/mImg2.jpg");
+  }
+  
+  100% {
+    background-image: url("img/redBox/mImg1.jpg");
+  }
+  
+  /* 100% {
+    background-image: url("img/redBox/mImg3.jpg");
+  } */
+}
+
+.lestining-music1 {
+  background-size: cover;
+  animation: exampleAnimation 8s infinite;
+}
