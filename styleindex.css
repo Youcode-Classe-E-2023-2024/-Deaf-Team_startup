@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Rubik+Glitch&display=swap');
+
+.navbar{
+    height: 180px;
+    width: 100%;
+}
+.titre{
+    color: white;
+    font-size: 44px;
+    font-family: Arial;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.sous-titre{
+    color: #A2A2AD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+        /* BUTTON-SE_CONNECTER  */
+        
+.se-connecter{
+    height: 40px;
+    width: 150px;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: space-evenly;
+}
+.se-connecter img{
+    width: 16px;
+}
+
+    /* BUTTON-S_INSCRIRE */
+.s-inscrire{
+    background-color: white;
+    width: max-content;
+    height: 55px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 60px;
+}
+.s-inscrire p{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+    /* CONTENT */
+
+.section1{
+    margin-bottom: 35px;
+}
+
+.section{
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.grand-image{
+    width: 100%;
+    height: 500px;
+}
+
+.petit-image{
+    width: 700px;
+    height: 450px;
+}
+
+    /* NOUVEAUTES */
+
+.nouveaute{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 75px 120px;
+}
+
+.border{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+    height: 1px;
+    width: 100%;
+    border: none;
+}
+
+        /* MEDIA-QUERY */
+
+@media (max-width:1000px) {
+    .logo{
+        height: 100px;
+    }
+    .se-connecter{
+        height: 35px;
+        width: 130px;
+        font-size: 12px;
+    }
+    .s-inscrire{
+        margin-bottom: 50px;
+    }
+    .titre{
+        font-size: 33px;
+        text-align: center;
+    }
+    .sect{
+        flex-direction: column;
+        text-align: center;
+    }
+    .grand-image{
+        height: 200px;
+    }
+    .petit-image{
+        height: 250px;
+        width: 400px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
