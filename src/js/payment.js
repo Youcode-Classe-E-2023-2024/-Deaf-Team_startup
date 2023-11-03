@@ -1,5 +1,7 @@
 'use strict';
 
+const totalPrice = localStorage.getItem("totalPrice");
+
 const ccv = document.querySelector("[ccv]");
 const backCard = document.querySelector(".back");
 const frontCard = document.querySelector(".front");
@@ -36,6 +38,8 @@ cardNumber.addEventListener("input", EcritcardNumber);
 const cardName = document.querySelector(".card-name-input");
 const frontName = document.querySelector(".card-holder-name");
 
+const cardNamePattern =/[A-Za-z]{1,20}/i; 
+const cardNameRegex = cardNamePattern.test(cardName.value);
 const EcritcardName = function() {
     if (cardName.value.trim() === "") {
         frontName.innerText = "FULL NAME";
@@ -131,7 +135,10 @@ const isValidCreditCardNumber = function(cardNumber) {
   }
 
 
-
+  showPrice = function() {
+    window.alert("the price of the subscription you chosed is: "+ totalPayment);
+    window.location.href = "./src/login.html";
+}
 form.addEventListener('submit', isValidCreditCardNumber);
 
 // Function to save form data to local storage
@@ -179,7 +186,5 @@ function saveFormData() {
   
   // Call the retrieveFormData function to populate the fields when the page loads
   retrieveFormData();
-
-  
 
   
